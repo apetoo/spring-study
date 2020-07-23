@@ -7,6 +7,6 @@
     <import resource="dependency-lookup.xml"/>
 
     <bean class="com.warape.dependency.injection.domain.UserHolder">
-        <property name="user" ref="user"/>
+        <constructor-arg name="user" ref="superUser"/>
     </bean>
 </beans>

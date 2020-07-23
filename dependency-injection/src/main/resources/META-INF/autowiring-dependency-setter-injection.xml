@@ -6,7 +6,13 @@
 
     <import resource="dependency-lookup.xml"/>
 
-    <bean class="com.warape.dependency.injection.domain.UserHolder">
-        <property name="user" ref="user"/>
+    <!--byName-->
+    <bean class="com.warape.dependency.injection.domain.UserHolder" autowire="byName">
+        <!--替换autowiring-->
     </bean>
+
+    <!--byType-->
+<!--    <bean class="com.warape.dependency.injection.domain.UserHolder" autowire="byType">-->
+<!--        替换autowiring-->
+<!--    </bean>-->
 </beans>
